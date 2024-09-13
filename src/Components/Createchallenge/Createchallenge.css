@@ -27,6 +27,7 @@
     color: #ffffff;
     width: 214px;
     background-color: var(--green-accent);
+    cursor: pointer;
 }
 
 .form-container form label {
