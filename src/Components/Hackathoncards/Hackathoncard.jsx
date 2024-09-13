@@ -11,7 +11,7 @@ export const Hackathoncard = ({ selectedStatus = [], selectedLevel = [], searchT
 
     async function getCards() {
         try {
-            const response = await fetch("https://appsail-50022244014.development.catalystappsail.in/CARDS");
+            const response = await fetch("https://hackathon-t6pd.onrender.com/CARDS");        
             const data = await response.json();
             setCards(data);
             setFilteredCards(data);
@@ -146,7 +146,7 @@ export const Hackathoncard = ({ selectedStatus = [], selectedLevel = [], searchT
                     const { status, cardStatus } = getStatus(value.startDate, value.endDate);
                     return (
                         <div className='card-wrapper' key={index}>
-                            <img src={`https://appsail-50022244014.development.catalystappsail.in/cardimage/${value.image}`} alt='Hackathon' />
+                            <img src={`https://hackathon-t6pd.onrender.com/cardimage/${value.image}`} alt='Hackathon' />
                             <div className='card-content'>
                                 <div className={`status ${status == "Active" ? 'active' : status == "Upcoming" ? 'upcoming' : 'past'}`}>{status}</div>
                                 <p className='card-title'>{value.title}</p>

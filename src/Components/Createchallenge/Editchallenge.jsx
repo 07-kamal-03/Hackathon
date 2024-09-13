@@ -10,7 +10,7 @@ export const Editchallenge = ({ onCreate }) => {
 
     const [intialData, setInitialData] = useState([]);
     async function getDatas() {
-        const response = await fetch(`https://appsail-50022244014.development.catalystappsail.in/CARDS/${params.id}`)
+        const response = await fetch(`https://hackathon-t6pd.onrender.com/CARDS/${params.id}`)
         const data = await response.json();
         setInitialData(data)
     }
@@ -20,7 +20,7 @@ export const Editchallenge = ({ onCreate }) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         try {
-            const response = await fetch(`https://appsail-50022244014.development.catalystappsail.in/CARDS/${params.id}`, {
+            const response = await fetch(`https://hackathon-t6pd.onrender.com/CARDS/${params.id}`, {
                 method: 'PATCH',
                 body: formData
             })
@@ -56,7 +56,7 @@ export const Editchallenge = ({ onCreate }) => {
                     </div>
                     <div>
                         <div className="image-preview">
-                            <img src={`https://appsail-50022244014.development.catalystappsail.in/cardimage/` + intialData.image} alt='Hackathon' />
+                            <img src={`https://hackathon-t6pd.onrender.com/cardimage/` + intialData.image} alt='Hackathon' />
                         </div>
                         <label >Image</label>
                         <label htmlFor='image' className='custom-file-input'>{!imageCheck ? 'Upload image' : 'Re-upload image'}<img src={uploadIcon} alt='uploadIcon' /></label>

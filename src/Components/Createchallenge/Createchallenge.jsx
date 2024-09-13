@@ -18,7 +18,7 @@ export const Createchallenge = ({ onCreate }) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         try {
-            const response = await fetch('https://appsail-50022244014.development.catalystappsail.in/CARDS', {
+            const response = await fetch('https://hackathon-t6pd.onrender.com/CARDS', {
                 method: 'POST',
                 body: formData
             })

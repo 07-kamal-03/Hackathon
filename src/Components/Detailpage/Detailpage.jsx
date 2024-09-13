@@ -13,10 +13,9 @@ export const Detailpage = () => {
     useEffect(() => {
         async function getCards() {
             try {
-                const response = await fetch("https://appsail-50022244014.development.catalystappsail.in/CARDS");
-                const data = await response.json();
+                const response = await fetch("https://hackathon-t6pd.onrender.com/CARDS");
+                const data = await response.json();                
                 setCards(data);
-                console.log(data);
 
             } catch (error) {
                 console.error("Failed to fetch cards", error);
@@ -61,17 +60,20 @@ export const Detailpage = () => {
             hour12: true
         };
         const formattedDate = status.date.toLocaleString('en-GB', options).replace(/,/g, '');
-
         return `${status.label} ${formattedDate} (India Standard Time)`;
     };
 
     async function pageDelete(card) {
         try {
-            const response = await fetch(`https://appsail-50022244014.development.catalystappsail.in/CARDS/${card.id}`, {
+            const response = await fetch(`https://hackathon-t6pd.onrender.com/CARDS/${card.id}`, {
                 method: 'DELETE'
             });
+            
             if (response.ok) {
                 navigate('/')
+            }else {
+                const errorMessage = await response.text();
+                alert(`Failed to delete card: ${errorMessage}`);
             }
         } catch (error) {
             alert("Failed to delete card", error);
