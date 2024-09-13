@@ -59,7 +59,7 @@
 .filter-container {
     margin-left: 25px;
     position: absolute;
-    left: 1050px;
+    left: 1080px;
     z-index: 700;
     backdrop-filter: drop-shadow(4px 4px 10px rgb(0, 0, 0));
 }
