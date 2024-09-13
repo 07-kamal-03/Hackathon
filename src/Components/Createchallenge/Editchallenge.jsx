@@ -14,7 +14,10 @@ export const Editchallenge = ({ onCreate }) => {
         const data = await response.json();
         setInitialData(data)
     }
-    useEffect(() => getDatas, []);
+    useEffect(() => {
+        getDatas();
+        console.log("Data loaded");
+    }, []);
 
     async function handleSubmit(e) {
         e.preventDefault();
