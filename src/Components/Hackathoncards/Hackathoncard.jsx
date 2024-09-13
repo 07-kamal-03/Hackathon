@@ -11,8 +11,12 @@ export const Hackathoncard = ({ selectedStatus = [], selectedLevel = [], searchT
 
     async function getCards() {
         try {
-            const response = await fetch("https://hackathon-t6pd.onrender.com/CARDS");        
+            const response = await fetch("https://hackathon-t6pd.onrender.com/CARDS");   
+            console.log(response);
+                 
             const data = await response.json();
+            console.log(data);
+            
             setCards(data);
             setFilteredCards(data);
         } catch (error) {
@@ -20,7 +24,11 @@ export const Hackathoncard = ({ selectedStatus = [], selectedLevel = [], searchT
         }
     }
 
-    useEffect(() => getCards, []);
+    useEffect(() =>{
+         getCards();
+         console.log("useEffect() called");
+
+    }, []);
 
     const Countdown = ({ startDate, endDate }) => {
         const calculateTimeRemaining = (targetDate) => {
