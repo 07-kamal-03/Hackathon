@@ -1,0 +1,24 @@
+.accordian-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.accordian-wrapper {
+    width: 542px;
+    border-radius: 20px;
+    background-color: #F8F9FD;
+    padding: 62px 32px;
+    margin: 0 0 41px 35px;
+}
+
+.accordian-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.accordian-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #64607D;
+}

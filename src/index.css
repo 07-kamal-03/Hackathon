@@ -1,0 +1,16 @@
+:root {
+  font-family: "Poppins", sans-serif;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --dark-blue: #003145;    
+  --deep-blue: #002A3B;
+  --green-accent: #44924C;
+  --highlight-yellow: #FFCE5C;
+}

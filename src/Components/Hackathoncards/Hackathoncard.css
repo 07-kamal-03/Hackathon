@@ -1,0 +1,129 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card-wrapper {
+    width: 354px;
+    border-radius: 15px;
+    margin: 0 27px 50px 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    height: 100%;
+}
+.status.past {
+    background-color: rgba(255, 60, 0, 17%);
+    color: #666666;
+}
+.status.active {
+    background-color: rgba(68, 146, 76, 25%);
+    color: var(--green-accent);
+}
+.status.upcoming {
+    background-color: rgba(242, 201, 76, 25%);
+    color: #666666;
+}
+.status {
+    width: 87px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 13px;
+    font-family: "Inter", sans-serif;
+    margin-top: 25px;
+    margin-bottom: 19px;
+}
+.card-button {
+    padding: 12px 22px 12px 48px;
+    background-color: var(--green-accent);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 27px;
+}
+.card-button img {
+    padding-right: 14px;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 354px;
+    height: 320px;
+}
+.card-title{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.card-status{
+    font-weight: 500;
+    font-size: 14px;
+    color: #444444;
+}
+.card-time{
+    font-weight: 600;
+    font-size: 18px;
+    color: #454545;
+}
+.timer {
+    font-size: 18px;
+    font-weight: 700;
+    color: #454545;
+    margin-top: 8px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.timer-title {
+    width: 129px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+}
+.timer-title p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #4F4F4F;
+    font-family: "Inter", sans-serif;
+}
+.past-date {
+    margin-bottom: 32px;
+    margin-top: 20px;
+}
+.sort-dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+}
+.sort-dropdown label{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+.sort-dropdown select {
+    width: 150px;
+    margin-top: 16px;
+    border-radius: 5px;
+    background-color: #F8F8F8;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #454545;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

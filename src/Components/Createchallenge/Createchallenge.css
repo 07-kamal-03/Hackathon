@@ -1,0 +1,102 @@
+.form-container {
+    width: 100%;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 33px;
+    margin-left: 89px;
+    font-family: "Inter", sans-serif;
+}
+
+.image-preview img {
+    width: 150px;
+}
+
+.form-container form button {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 33px;
+    color: #ffffff;
+    width: 214px;
+    background-color: var(--green-accent);
+}
+
+.form-container form label {
+    margin-bottom: 18px;
+}
+
+.form-container form input {
+    height: 39px;
+    outline: none;
+    border: 1px solid #B7B7B7;
+    border-radius: 5px;
+    padding: 20px;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+    width: 453px;
+}
+
+.form-container form select {
+    height: 39px;
+    outline: none;
+    border: 1px solid #B7B7B7;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+    width: 453px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.form-container form div {
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-top: 33px;
+    margin-left: 89px;
+}
+
+.form-title {
+    background-color: #F8F9FD;
+}
+
+.form-title p {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 41px 0 37px 89px;
+}
+
+.custom-file-input {
+    outline: none;
+    border: 1px solid #B7B7B7;
+    border-radius: 5px;
+    padding: 10px;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #D9D9D9;
+    width: 453px;
+}
