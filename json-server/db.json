@@ -5,12 +5,48 @@
       "image": "Group 1000002466.png",
       "title": "Data Science Bootcamp - Graded Datathon",
       "description": "Data Science Bootcamp - Graded Datathon",
+      "startDate": "2024-09-30",
+      "endDate": "2024-09-30",
+      "level": "Hard"
+    },
+    {
+      "id": 2,
+      "image": "Group 1000002466.png",
+      "title": "Data Science Bootcamp - Graded Datathon",
+      "description": "Data Science Bootcamp - Graded Datathon",
       "startDate": "2024-09-10",
       "endDate": "2024-09-10",
       "level": "Easy"
-    },
+    }
     {
       "id": 3,
+      "image": "Group 1000002466.png",
+      "title": "Data Science Bootcamp - Graded Datathon",
+      "description": "Data Science Bootcamp - Graded Datathon",
+      "startDate": "2024-09-10",
+      "endDate": "2024-09-10",
+      "level": "Medium"
+    }
+    {
+      "id": 4,
+      "image": "Group 1000002466.png",
+      "title": "Data Science Bootcamp - Graded Datathon",
+      "description": "Data Science Bootcamp - Graded Datathon",
+      "startDate": "2024-09-20",
+      "endDate": "2024-09-30",
+      "level": "Easy"
+    }
+    {
+      "id": 5,
+      "image": "Group 1000002466.png",
+      "title": "Data Science Bootcamp - Graded Datathon",
+      "description": "Data Science Bootcamp - Graded Datathon",
+      "startDate": "2024-09-10",
+      "endDate": "2024-09-30",
+      "level": "Hard"
+    }
+    {
+      "id": 6,
       "image": "Group 1000002466.png",
       "title": "Data Science Bootcamp - Graded Datathon",
       "description": "Data Science Bootcamp - Graded Datathon",
