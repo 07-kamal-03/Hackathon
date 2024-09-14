@@ -8,9 +8,11 @@ export const Hackathoncard = ({ selectedStatus = [], selectedLevel = [], searchT
     const [filteredCards, setFilteredCards] = useState([]);
     const navigate = useNavigate();
     const [cards, setCards] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     async function getCards() {
         try {
+            setLoading(true);
             const response = await fetch("https://hackathon-t6pd.onrender.com/CARDS");   
             console.log(response);
                  
@@ -22,12 +24,14 @@ export const Hackathoncard = ({ selectedStatus = [], selectedLevel = [], searchT
         } catch (error) {
             console.error("Failed to fetch cards", error);
         }
+        finally{
+            setLoading(false);
+        }
     }
 
     useEffect(() =>{
          getCards();
          console.log("useEffect() called");
-
     }, []);
 
     const Countdown = ({ startDate, endDate }) => {
@@ -147,6 +151,8 @@ export const Hackathoncard = ({ selectedStatus = [], selectedLevel = [], searchT
             </select>
         </div>
             <div className='card-container'>
+            {loading && <div className='loading alert'>
+                <div className='box'></div>Loading...</div>}
                 {filteredCards.filter((value) => {
                     const normalizedSearchText = searchText?.toLowerCase() || '';
                     return normalizedSearchText === '' ? value : value.title.toLowerCase().includes(searchText);
