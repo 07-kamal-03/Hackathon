@@ -42,7 +42,7 @@
     font-weight: 500;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
     .outcomes-container {
         padding: 20px;
         width: 100%;
@@ -95,7 +95,7 @@
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 600px) {
     .outcomes-container {
         padding: 20px;
         width: 100%;

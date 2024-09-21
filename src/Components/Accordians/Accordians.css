@@ -23,7 +23,7 @@
     color: #64607D;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 600px) {
 
     .accordian-wrapper {
         width: 342px;

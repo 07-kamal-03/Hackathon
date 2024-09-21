@@ -78,7 +78,7 @@
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 600px) {
     .hero-container {
         display: flex;
         flex-direction: column;
