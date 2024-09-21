@@ -125,7 +125,7 @@
         margin-right: 126px;
     }
 }
-@media (max-width: 426px) {
+@media (max-width: 600px) {
     .detailpage-content {
         margin-right: 20px;
         margin-left: 20px;

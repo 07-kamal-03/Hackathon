@@ -95,7 +95,7 @@ input[type='file'] {
     width: 453px;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 600px) {
     .form-container form input {
         width: 250px;
     }
