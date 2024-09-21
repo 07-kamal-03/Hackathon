@@ -9,6 +9,7 @@
     margin-top: 33px;
     margin-left: 89px;
     font-family: "Inter", sans-serif;
+    width: 100%;
 }
 
 .image-preview img {
@@ -68,14 +69,6 @@ input[type='file'] {
     flex-direction: column;
 }
 
-.form-container form {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    margin-top: 33px;
-    margin-left: 89px;
-}
-
 .form-title {
     background-color: #F8F9FD;
 }
@@ -100,4 +93,23 @@ input[type='file'] {
     gap: 10px;
     background-color: #D9D9D9;
     width: 453px;
+}
+
+@media (max-width: 426px) {
+    .form-container form input {
+        width: 250px;
+    }
+
+    .form-container form {
+        margin: auto;
+        align-items: center;
+    }
+
+    .custom-file-input {
+        width: 250px;
+    }
+
+    .form-container form select {
+        width: 250px;
+    }
 }

@@ -22,3 +22,22 @@
     font-weight: 500;
     color: #64607D;
 }
+
+@media (max-width: 426px) {
+
+    .accordian-wrapper {
+        width: 342px;
+        padding: 31px 32px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .accordian-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .accordian-description {
+        font-size: 14px;
+    }
+}

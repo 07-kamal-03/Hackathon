@@ -7,7 +7,6 @@
 
 .outcomes-wrapper {
     display: flex;
-    width: 100vw;
 }
 
 .outcomes-container .content-wrapper:nth-child(even) {
@@ -41,4 +40,102 @@
 .outcomes-description {
     font-size: 16px;
     font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .outcomes-container {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .outcomes-wrapper {
+        gap: 10px;
+    }
+
+    .outcomes-container .content-wrapper:nth-child(even) {
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        padding-left: 63px;
+    }
+
+    .outcomes-container .content-wrapper:nth-child(3) {
+        padding-left: 63px;
+    }
+
+    .content-wrapper {
+        padding-right: 20px;
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .outcomes-content {
+        margin-left: 10px;
+    }
+
+    .outcomes-title {
+        font-size: 16px;
+    }
+
+    .outcomes-description {
+        font-size: 12px;
+    }
+
+    .outcomes-container .content-wrapper:nth-child(even) {
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        padding-left: 31px;
+    }
+
+    .outcomes-container .content-wrapper:nth-child(3) {
+        padding-left: 31px;
+    }
+}
+
+@media (max-width: 475px) {
+    .outcomes-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .outcomes-wrapper {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .outcomes-container .content-wrapper:nth-child(even) {
+        border-left: none;
+        border-right: none;
+        padding-left: 0px;
+    }
+
+    .outcomes-container .content-wrapper:nth-child(3) {
+        padding-left: 0px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+
+    }
+
+    .outcomes-content {
+        margin-left: 10px;
+    }
+
+    .outcomes-title {
+        font-size: 16px;
+    }
+
+    .outcomes-description {
+        font-size: 12px;
+    }
 }
